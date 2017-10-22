@@ -24,6 +24,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .header-image h1 {
@@ -53,6 +54,12 @@ header nav ul li a:hover {
 }
 header nav {
     background: #489067;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 /* конец хэдэра */
 
@@ -165,4 +172,95 @@ section {
 }
 .image-box * {
   transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+/* раздел с иконками */
+.box-icons {
+    height: calc(400px + 4rem);
+    width: calc(800px + 4rem);
+    position: relative;
+    margin: 0 auto;
+}
+
+.box-icons--icon-box,
+.box-icons--icon-box div {
+    height: 200px;
+    width: 400px;
+}
+
+#box-1 {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+#box-2 {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+#box-3 {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+#box-4 {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.box-wrapper {
+    position: relative;
+}
+
+.box-wrapper p {
+    text-align: center;
+    width: 400px;
+}
+
+.text-bottom {
+    position: absolute;
+    bottom: 0.4rem;
+}
+
+.text-top {
+    position: absolute;
+    top: 0.4rem;
+}
+
+#img-1 {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+#img-2 {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+#img-3 {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+#img-4 {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+footer {
+  padding: 150px;
+  text-align: center;
+  background-color: #004D40;
+}
+
+footer p {
+  color: white;
 }
